@@ -20,3 +20,7 @@
 - Official [ESP IDE](https://github.com/espressif/esp-idf)
 - Official [ESP ADF](https://github.com/espressif/esp-adf/)
 - Official ["Arduino for ESP32"](https://github.com/espressif/arduino-esp32) library
+
+## Notes
+
+- https://github.com/espressif/arduino-esp32/issues/116
