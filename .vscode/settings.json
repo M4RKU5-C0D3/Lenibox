@@ -1,0 +1,5 @@
+{
+    "cmake.configureOnOpen": false,
+    "git.ignoreLimitWarning": true,
+    "idf.port": "/dev/ttyUSB0"
+}
