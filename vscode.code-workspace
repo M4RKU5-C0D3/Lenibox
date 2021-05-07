@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "esp"
+		},
+		{
+			"path": "arduino"
+		}
+	],
+    "settings": {
+        "idf.port": "/dev/ttyUSB1",
+        "idf.flashType": "UART"
+    }
+}

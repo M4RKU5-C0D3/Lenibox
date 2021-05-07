@@ -1,0 +1,9 @@
+
+# CONFIGS
+/sdkconfig
+
+# BUILDS
+/build
+
+# KEEP
+!.gitkeep
