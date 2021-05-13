@@ -1,14 +1,17 @@
 {
 	"folders": [
 		{
+			"name": "esp",
 			"path": "esp"
 		},
 		{
+			"name": "arduino",
 			"path": "arduino"
 		}
 	],
     "settings": {
         "idf.port": "/dev/ttyUSB1",
+        "idf.espAdfPath": "/home/markus/.espressif/esp-adf",
         "idf.flashType": "UART"
     }
 }
