@@ -133,7 +133,7 @@ void app_main(void)
 
     ESP_LOGI(TAG, "[1.2] Set up a sdcard playlist and scan sdcard music save to it");
     sdcard_list_create(&sdcard_list_handle);
-    sdcard_scan(sdcard_url_save_cb, "/sdcard", 0, (const char *[]) {"mp3"}, 1, sdcard_list_handle);
+    sdcard_scan(sdcard_url_save_cb, "/sdcard/DBFF3912", 0, (const char *[]) {"mp3"}, 1, sdcard_list_handle);
     sdcard_list_show(sdcard_list_handle);
 
     ESP_LOGI(TAG, "[ 2 ] Start codec chip");
@@ -265,6 +265,7 @@ void app_main(void)
     audio_event_iface_destroy(evt);
 
     /* Release all resources */
+    sdcard_list_destroy(sdcard_list_handle);
     audio_pipeline_deinit(pipeline);
     audio_element_deinit(i2s_stream_writer);
     audio_element_deinit(mp3_decoder);
